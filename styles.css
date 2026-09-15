@@ -129,12 +129,27 @@ section{padding-block:88px;}
 /* ---------- Services / spec cards ---------- */
 .spec-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
 @media (max-width:760px){.spec-list{grid-template-columns:1fr;}}
-.spec{background:var(--panel);padding:28px;display:flex;gap:18px;}
-.spec svg{flex:none;width:38px;height:38px;color:var(--flare);}
+.spec{background:var(--panel);display:flex;flex-direction:column;}
+.spec-photo{aspect-ratio:16/9;overflow:hidden;background:var(--ink-2);}
+.spec-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.94) contrast(1.03);}
+.spec-body{padding:24px 28px 28px;display:flex;gap:16px;}
+.spec-body svg{flex:none;width:32px;height:32px;color:var(--flare);}
 .spec h3{font-size:1.02rem;text-transform:uppercase;}
 .spec p{margin:8px 0 0;font-size:.88rem;color:var(--mist-dim);}
 .spec ul{margin:10px 0 0;padding-left:18px;font-size:.85rem;color:var(--mist-dim);}
 .spec li+li{margin-top:4px;}
+.spec-thumbs{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap;}
+.spec-thumbs img{width:52px;height:52px;object-fit:cover;border:1px solid var(--line);}
+
+/* ---------- Compact photo gallery (highlights, mini-sections) ---------- */
+.mini-sheet{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+@media (max-width:900px){.mini-sheet{grid-template-columns:repeat(3,1fr);}}
+@media (max-width:560px){.mini-sheet{grid-template-columns:repeat(2,1fr);}}
+.mini-frame{background:var(--panel);border:1px solid var(--line);}
+.mini-frame .frame-media{aspect-ratio:1/1;}
+.mini-frame .frame-body{padding:10px 12px 12px;}
+.mini-frame .frame-body h3{font-size:.78rem;}
+.mini-frame .frame-body p{font-size:.68rem;}
 
 /* ---------- Stat strip ---------- */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--panel);}

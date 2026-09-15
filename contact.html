@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Aliff Creative</title>
+<meta name="description" content="Get in touch with Aliff Creative — Kajang, Selangor, Malaysia. Call +6019-2734120, email aliffcreative@gmail.com, or send a project request.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><strong>Aliff Creative</strong><span>Photography &amp; Videography — Oil &amp; Gas / Industrial</span></a>
+    <button class="navtoggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="navlinks" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="work.html">Field Log</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="navcta"><a class="btn btn-solid" href="contact.html">Request Quote</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="page-header-media" style="background-image:url('images/sunset-panorama.jpg');">
+      <div class="wrap page-header-copy">
+        <p class="eyebrow">Get In Touch</p>
+        <h1>Mission Request</h1>
+        <p>Tell us the platform, the scope and the dates — we'll follow up with a crew and a quote.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap contact-grid">
+      <div>
+        <div class="ticket">
+          <div class="confirm" id="confirmBox">Your email app should now be open with this request pre-filled — hit send from there. Prefer to skip the form? Use the direct details alongside this.</div>
+          <form id="quoteForm">
+            <div class="field-row">
+              <div class="field"><label for="fName">Name</label><input id="fName" name="name" type="text" required></div>
+              <div class="field"><label for="fCompany">Company / Operator</label><input id="fCompany" name="company" type="text"></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="fLocation">Platform / Location</label><input id="fLocation" name="location" type="text" placeholder="e.g. offshore Sarawak"></div>
+              <div class="field">
+                <label for="fType">Project Type</label>
+                <select id="fType" name="type">
+                  <option>Drone / Aerial Survey</option>
+                  <option>Industrial &amp; Offshore Video-Photo</option>
+                  <option>Multi-Camera / Live / Studio</option>
+                  <option>Photography</option>
+                  <option>Graphic Design / Printing</option>
+                  <option>3D Animation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label for="fMessage">Message</label><textarea id="fMessage" name="message" rows="4" required></textarea></div>
+            <div class="ticket-foot">
+              <button type="submit" class="btn btn-solid">Submit Request</button>
+              <span class="eyebrow" style="color:var(--mist-dim);">Opens your email app</span>
+            </div>
+          </form>
+          <p class="form-note">This form composes an email to aliffcreative@gmail.com via your device's mail app — nothing is sent from this page directly.</p>
+        </div>
+      </div>
+      <div>
+        <div class="direct">
+          <h3>Direct</h3>
+          <dl>
+            <dt>Studio</dt><dd>Begin'da Media Studio<br>11-1, Jalan Universiti Bangi 1,<br>Taman Universiti Bangi, 43000 Kajang, Selangor</dd>
+            <dt>Phone</dt><dd><a href="tel:+60192734120">+6019-2734120</a></dd>
+            <dt>Email</dt><dd><a href="mailto:aliffcreative@gmail.com">aliffcreative@gmail.com</a></dd>
+            <dt>Facebook</dt><dd><a href="https://www.facebook.com/AliffCreativeDesign/" target="_blank" rel="noopener">facebook.com/AliffCreativeDesign</a></dd>
+            <dt>Instagram</dt><dd><a href="https://instagram.com/aliffcreative" target="_blank" rel="noopener">@aliffcreative</a></dd>
+          </dl>
+        </div>
+        <p class="note" style="font-size:.78rem;color:var(--mist-dim);">Serving offshore and onshore projects across Malaysia, based out of Kajang, Selangor.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <a class="brand" href="index.html"><strong>Aliff Creative</strong><span>Photography &amp; Videography — Oil &amp; Gas / Industrial</span></a>
+      <nav class="foot-links">
+        <a href="work.html">Field Log</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.facebook.com/AliffCreativeDesign/" target="_blank" rel="noopener">Facebook</a>
+      </nav>
+    </div>
+    <p class="credits">&copy; Aliff Creative. Est. 2016, Kajang, Selangor, Malaysia. Photography, videography and project details from the Aliff Creative Portfolio &amp; Catalog 2025.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

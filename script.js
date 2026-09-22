@@ -80,4 +80,25 @@ if(form){
 const top=document.createElement('button');top.type='button';top.className='back-top';top.setAttribute('aria-label','Back to top');top.textContent='↑';top.hidden=true;document.body.append(top);
 top.addEventListener('click',()=>{window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});document.querySelector('.brand').focus({preventScroll:true});});
 window.addEventListener('scroll',()=>{top.hidden=window.scrollY<650;},{passive:true});
+
+const showreel=document.getElementById('showreelPlayer');
+if(showreel){
+ const preview=showreel.querySelector('.showreel-preview');
+ const poster=preview.querySelector('img');
+ const fallbackPoster=()=>{poster.src='images/hero-dusk.jpg';};
+ poster.addEventListener('error',fallbackPoster,{once:true});
+ if(poster.complete && !poster.naturalWidth)fallbackPoster();
+ preview.addEventListener('click',e=>{
+  if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;
+  e.preventDefault();
+  const player=document.createElement('iframe');
+  player.src='https://www.youtube-nocookie.com/embed/B8L6DgUXT6s?autoplay=1&playsinline=1&rel=0';
+  player.title="Aliff Creative Showreel 2018 - 2019: THE FRONTLINERS";
+  player.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+  player.allowFullscreen=true;
+  player.referrerPolicy='strict-origin-when-cross-origin';
+  showreel.replaceChildren(player);
+  player.focus();
+ });
+}
 })();

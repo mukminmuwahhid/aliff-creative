@@ -6,10 +6,11 @@
 <title>Contact — Aliff Creative</title>
 <meta name="description" content="Get in touch with Aliff Creative — Kajang, Selangor, Malaysia. Call +6019-2734120, email aliffcreative@gmail.com, or send a project request.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="contact">
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="topbar">
   <div class="wrap">
@@ -17,7 +18,7 @@
     <button class="navtoggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <nav class="navlinks" id="navLinks">
       <a href="index.html">Home</a>
-      <a href="work.html">Field Log</a>
+      <a href="work.html">Portfolio</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html" aria-current="page">Contact</a>
@@ -26,12 +27,12 @@
   </div>
 </header>
 
-<main>
+<main id="main" tabindex="-1">
   <section class="page-header">
     <div class="page-header-media" style="background-image:url('images/sunset-panorama.jpg');">
       <div class="wrap page-header-copy">
         <p class="eyebrow">Get In Touch</p>
-        <h1>Mission Request</h1>
+        <h1>Let’s make it happen.</h1>
         <p>Tell us the platform, the scope and the dates — we'll follow up with a crew and a quote.</p>
       </div>
     </div>
@@ -44,8 +45,8 @@
           <div class="confirm" id="confirmBox">Your email app should now be open with this request pre-filled — hit send from there. Prefer to skip the form? Use the direct details alongside this.</div>
           <form id="quoteForm">
             <div class="field-row">
-              <div class="field"><label for="fName">Name</label><input id="fName" name="name" type="text" required></div>
-              <div class="field"><label for="fCompany">Company / Operator</label><input id="fCompany" name="company" type="text"></div>
+              <div class="field"><label for="fName">Name</label><input autocomplete="name" id="fName" name="name" type="text" required></div>
+              <div class="field"><label for="fCompany">Company / Operator</label><input autocomplete="organization" id="fCompany" name="company" type="text"></div>
             </div>
             <div class="field-row">
               <div class="field"><label for="fLocation">Platform / Location</label><input id="fLocation" name="location" type="text" placeholder="e.g. offshore Sarawak"></div>
@@ -64,7 +65,7 @@
             </div>
             <div class="field"><label for="fMessage">Message</label><textarea id="fMessage" name="message" rows="4" required></textarea></div>
             <div class="ticket-foot">
-              <button type="submit" class="btn btn-solid">Submit Request</button>
+              <button type="submit" class="btn btn-solid">Compose enquiry</button>
               <span class="eyebrow" style="color:var(--mist-dim);">Opens your email app</span>
             </div>
           </form>
@@ -93,7 +94,7 @@
     <div class="foot-row">
       <a class="brand" href="index.html"><strong>Aliff Creative</strong><span>Photography &amp; Videography — Oil &amp; Gas / Industrial</span></a>
       <nav class="foot-links">
-        <a href="work.html">Field Log</a>
+        <a href="work.html">Portfolio</a>
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
